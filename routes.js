@@ -1,6 +1,6 @@
 const Router = require('express').Router;
 const router = new Router();
-const Mercury = require('@postlight/mercury-parser');
+const Mercury = require('mercury-parser');
 
 router.route('/').get((req, res) => {
     res.json({
