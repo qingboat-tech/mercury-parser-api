@@ -11,13 +11,20 @@ This repo provides a dockerized drop-in replacement for the [Mercury Parser](htt
 ### Pull And Run
 
 ```bash
-docker run -p 3000:3000 -d wangqiru/mercury-parser-api
+docker run -p 3000:3000 -d mercury-parser-api
 ```
 
 ### Build Your Own
 
 ```bash
 docker build -t mercury-parser-api .
+```
+
+### Push to the private docker registry
+```bash
+sudo docker tag mercury-parser-api registry.cn-hangzhou.aliyuncs.com/jerryan999/mercury-parser-api:v1
+
+sudo docker push registry.cn-hangzhou.aliyuncs.com/jerryan999/mercury-parser-api:v1
 ```
 
 then
